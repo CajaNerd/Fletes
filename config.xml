@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.buscaflete.cliente" version="1.0">
+
+	<name>Fletes Chile</name>
+	
+	<description>El sistema más rapido para transporte y mudanza</description>
+	
+	<author href="http://www.buscaflete.cl" email="contacto@buscaflete.cl">BuscaFlete.Cl</author>
+	
+	<icon src="icono.png" gap:role="default" />
+
+	<feature name="http://api.phonegap.com/1.0/geolocation"/>
+	
+	<preference name="orientation" value="landscape" />
+	
+	<gap:platform>
+		<gap:platform name="android" minVersion="2.3" />
+		<gap:platform name="ios" />
+	</gap:platform>
+	<access origin="http://127.0.0.1*" />
+	<access origin="http://cajanerd.kd.io*" />
+	<access origin="http://www.buscaflete.cl*" />
+<content src="index.html" />
+</widget>
