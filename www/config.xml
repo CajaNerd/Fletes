@@ -4,7 +4,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.buscaflete.cliente"
-        version   = "1.2.0">
+        version   = "1.3">
 
     <name>Fletes Chile</name>
 
@@ -13,7 +13,7 @@
     </description>
 
     <author href="http://www.buscaflete.cl" email="contacto@buscaflete.cl">
-        BuscaFlete.Cl
+        BuscaFlete
     </author>
 
     <!--
@@ -22,6 +22,7 @@
     -->
     <feature name="http://api.phonegap.com/1.0/device" />
     <feature name="http://api.phonegap.com/1.0/geolocation"/>
+    <feature name="http://api.phonegap.com/1.0/network"/>
     <!--
         If you do not want any permissions to be added to your app, add the
         following tag to your config.xml; you will still have the INTERNET
@@ -80,10 +81,6 @@
     <gap:splash src="res/screen/ios/screen-ipad-landscape.png"     gap:platform="ios"     width="1024" height="768" />
     <gap:splash src="res/screen/windows-phone/screen-portrait.jpg" gap:platform="winphone" />
 
-    <gap:platform>
-		<gap:platform name="android" minVersion="2.3" />
-		<gap:platform name="ios" />
-	</gap:platform>
     <!--
         Define access to external domains.
 
@@ -92,6 +89,7 @@
 
         Otherwise, you can specify specific domains:
     -->
+    <access origin="*" />
     <access origin="http://127.0.0.1*"/> <!-- allow local pages -->
     <access origin="http://cajanerd.kd.io*" />
     <!--
